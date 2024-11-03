@@ -1,14 +1,13 @@
-// src/components/Footer.jsx
 import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col w-full h-fit bg-[#374151] text-[#e5e7eb] px-6 py-1">
-      <div className="flex flex-row">
-        <div className="flex flex-col gap-2 justify-center w-[35%]">
+    <footer className="flex flex-col w-full h-fit bg-[#374151] text-[#e5e7eb] px-6 py-4">
+      <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col gap-2 justify-center w-full md:w-[35%] mb-4 md:mb-0">
           <div className="flex items-center w-full gap-4">
             <img src="https://tailwind-generator.b-cdn.net/favicon.png" width="57" alt="Logo Preview" />
-            <div className="text-3xl font-bold">Your Company</div>
+            <div className="text-3xl font-bold">Marquees Buisness</div>
           </div>
           <div className="grid grid-cols-3 gap-6 w-fit p-4">
             <a href="#">
@@ -28,14 +27,11 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-row w-[65%] justify-end gap-16 text-nowrap">
-          <div className="grid grid-cols-1 gap-40">
-            <div className="flex flex-col gap-2">
-              <div className="font-bold uppercase text-[#9ca3af] pb-3">Contact Us</div> 
-               <a href="#xxx" className="hover:underline">Email :- j3marquees@gmail.com </a>
-              <a href="#xxx" className="hover:underline">Contact Number:- +44 7402 332532</a>
-              
-            </div>
+        <div className="flex flex-col md:flex-row w-full md:w-[65%] justify-end gap-8 md:gap-16">
+          <div className="flex flex-col gap-2">
+            <div className="font-bold uppercase text-[#9ca3af] pb-3">Contact Us</div>
+            <a href="#xxx" className="hover:underline">Email: j3marquees@gmail.com</a>
+            <a href="#xxx" className="hover:underline">Contact Number: +44 7402 332532</a>
           </div>
           <div className="flex flex-col gap-2">
             <div className="font-bold uppercase text-[#9ca3af] pb-3">Newsletter</div>
@@ -59,7 +55,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full border-t border-gray-500 my-8"></div>
-      <div className="text-center">© 2024 Your Company - All rights reserved.</div>
+      <div className="text-center">© 2024 Lucifer53 - All rights reserved.</div>
     </footer>
   );
 };
